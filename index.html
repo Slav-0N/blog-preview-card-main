@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Blog preview card</title>
 
-  Learning
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="wrap">
+      <main>
+        <section class="card">
+          <div class="pic-wrap">
+            <img
+              class="main-background"
+              src="./assets/images//illustration-article.svg"
+              alt="background image with abstract shapes such as greater than, less than and curly brackets in yellow, black and white colors"
+            />
+          </div>
 
-  Published 21 Dec 2023
+          <p class="tags">Learning</p>
 
-  HTML & CSS foundations
+          <time datetime="2023-12-21">Published 21 Dec 2023</time>
+          <h2 class="card-name" pointer>HTML & CSS foundations</h2>
+          <p class="text">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+          <div class="user-wrapper">
+            <img
+              src="./assets/images/image-avatar.webp"
+              alt="avatar picture"
+              class="user-avatar"
+            /><span class="user-name">Greg Hooper</span>
+          </div>
+        </section>
+      </main>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <footer class="attribution">
+        <div>
+          <p>
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="https://github.com/Slav-0N">Slav-0N</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

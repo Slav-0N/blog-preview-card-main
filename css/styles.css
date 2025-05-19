@@ -1,0 +1,191 @@
+:root {
+  --color-gray-500: #6b6b6b;
+  --color-gray-950: #111111;
+  --color-yellow: #f4d04e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #111111;
+  letter-spacing: 0;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4d04e;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  width: 327px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid black;
+  box-shadow: 8px 8px 0 0 #000;
+  background: var(--color-white);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.pic-wrap {
+  width: 279px;
+  height: 200px;
+  border-radius: 10px;
+}
+.pic-wrap > img {
+  border-radius: 10px;
+}
+
+.main-background {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tags {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 150%;
+  color: #111111;
+  letter-spacing: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 73px;
+  height: 26px;
+  background-color: #f4d04e;
+  margin-top: 24px;
+}
+
+time {
+  display: block;
+  margin-top: 12px;
+}
+
+.card-name {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 150%;
+  color: #111111;
+  letter-spacing: 0;
+  margin-top: 12px;
+}
+.card-name:hover {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-gray-500);
+  margin-top: 12px;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.user-avatar {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+}
+
+.user-name {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-gray-950);
+}
+
+footer {
+  padding-bottom: 5px;
+}
+
+/* ===== width 1440px =====*/
+
+@media (min-width: 1440px) {
+  .wrap {
+    width: 384px;
+  }
+
+  .pic-wrap {
+    width: 336px;
+  }
+
+  .tags {
+    font-size: 14px;
+    width: 82px;
+    height: 29px;
+  }
+
+  time {
+    font-size: 14px;
+  }
+
+  .card-name {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
